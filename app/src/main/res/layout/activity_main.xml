@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/dateLayout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="24dp"
+        android:layout_marginTop="24dp"
+        android:focusable="false"
+        android:hint="Date of birth"
+        app:expandedHintEnabled="false"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:placeholderText="DD/MM/YYYY">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/dateField"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:focusable="false" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/timeLayout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="24dp"
+        android:layout_marginTop="24dp"
+        android:focusable="false"
+        android:hint="Time"
+        app:expandedHintEnabled="false"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/dateLayout"
+        app:placeholderText="h MM a">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/timeField"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:focusable="false" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/dateStartRangeLayout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="12dp"
+        android:focusable="false"
+        android:hint="Start Date"
+        app:expandedHintEnabled="false"
+        app:layout_constraintEnd_toStartOf="@id/dateEndRangeLayout"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/timeLayout"
+        app:placeholderText="DD/MM/YYYY">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/dateStartRangeField"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:focusable="false" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/dateEndRangeLayout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="24dp"
+        android:focusable="false"
+        android:hint="End Date"
+        app:expandedHintEnabled="false"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/dateStartRangeLayout"
+        app:layout_constraintTop_toBottomOf="@id/timeLayout"
+        app:placeholderText="DD/MM/YYYY">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/dateEndRangeField"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:focusable="false" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/odlFormatDateLayout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="24dp"
+        android:layout_marginTop="24dp"
+        android:focusable="false"
+        android:hint="Date"
+        app:expandedHintEnabled="false"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/dateEndRangeLayout"
+        app:placeholderText="DD/MM/YYYY">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/oldFormatDateField"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:focusable="false" />
+    </com.google.android.material.textfield.TextInputLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
